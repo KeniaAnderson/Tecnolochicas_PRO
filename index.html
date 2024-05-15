@@ -4,16 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis trabajos</title>
+    <style>
+        body{
+            background: #a8c0ff;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            color: rgb(35, 43, 43);
+            text-align: center;
+        }
+
+        h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: normal;
+            color: rgb(225, 207, 45);
+            text-align: center;
+        }
+
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+            color: bisque;
+            text-align: center;
+        }
+        ol{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+        ol li a{
+            text-decoration: none;
+            color: bisque;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        ol li a:hover{
+            color: yellow;
+            text-shadow: 0 0 10px yellow;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+        .holi, .globo{
+            width: 350px;
+            height: auto;
+        }
+        .center-content{
+            flex: 1;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Mis trabajos</h1>
-    <ol>
-        <il><a href="../clongoogle/index.html">clongoogle</a></il>
-        <il><a href="../midemob/index.html">midemo</a></il>
-        <il><a href="../miprimeraweb/index.html">mi primera web</a></il>
-        <il><a href="../misegundaweb/index.html">mi segunda web</a></il>
-        <il><a href="../miportafolio/index.html">mi primer intento de portafolio</a></il>
-        <li><a href="../ex/index.html">mi portafolio final</a></li>
-    </ol>
+    <h2>Pss todos los iconos sirven para algo giño giño </h2>
+    <p>los globos son lindos</p>
+
+    <div class="container">
+        <img class="holi" src="https://studio.code.org/v3/assets/sJlITuw1kMzvGSQy2QqoQj6IMjb4ekCMTVjZCbouR-U/kirby_calling_for_an_assistant_by_marxkirby-dbo5isa.gif" alt="holi">
+        
+        <div class="center-content">
+            <ol>
+                <li><a href="../clongoogle/index.html">clongoogle</a></li>
+                <br><br>
+                <li><a href="../midemob/index.html">midemo</a></li>
+                <br><br>
+                <li><a href="../miprimeraweb/index.html">mi primera web</a></li>
+                <br><br>
+                <li><a href="../misegundaweb/index.html">mi segunda web</a></li>
+                <br><br>
+                <li><a href="../miportafolio/index.html">mi primer intento de portafolio</a></li>
+                <br><br>
+                <li><a href="../ex/index.html">mi portafolio final</a></li>
+            </ol>
+        </div>
+        
+        <img class="globo" src="https://i.pinimg.com/originals/be/a4/a7/bea4a77b1ec15245e231f963e96a30c1.gif" alt="globo">
+    </div>
 </body>
 </html>
